@@ -45,9 +45,9 @@ Praticar:
 
 Abra o arquivo `exercicio/index.html`
 
-👉 A solução deve ser desenvolvida dentro da pasta `exercicio/`
-👉 Você pode criar seus próprios arquivos (CSS, JavaScript, etc.) conforme necessário
-👉 Sugestão: tente organizar seu projeto (ex: pasta `assets`, `css`, `js`)
+* 👉 A solução deve ser desenvolvida dentro da pasta `exercicio/`
+* 👉 Você pode criar seus próprios arquivos (CSS, JavaScript, etc.) conforme necessário
+* 👉 Sugestão: tente organizar seu projeto (ex: pasta `assets`, `css`, `js`)
 
 ---
 
