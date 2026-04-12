@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Modelo Exercicio</title>
+</head>
+
+<body>
+    <section class="container">
+        <h1>Cardápio</h1>
+
+        <div class="cardapio">
+            <!-- Coluna de Comidas -->
+            <div class="coluna">
+                <h2>Comidas</h2>
+                <p>Pizza - R$ 25,00</p>
+                <p>Hambúrguer - R$ 20,00</p>
+                <p>Batata frita - R$ 15,00</p>
+                <p>Cachorro-quente - R$ 12,00</p>
+                <p>Lasanha - R$ 30,00</p>
+            </div>
+
+            <!-- Coluna de Bebidas -->
+            <div class="coluna">
+                <h2>Bebidas</h2>
+                <p>Refrigerante - R$ 8,00</p>
+                <p>Suco - R$ 10,00</p>
+                <p>Água - R$ 5,00</p>
+                <p>Chá gelado - R$ 7,00</p>
+                <p>Café - R$ 6,00</p>
+            </div>
+        </div>
+
+        <form id="form">
+            <h2>Faça seu pedido</h2>
+
+            <label for="comida">Comida:</label>
+            <select id="comida">
+                <option value="">Selecione</option>
+                <option value="pizza">Pizza</option>
+                <option value="hamburguer">Hambúrguer</option>
+                <option value="batata">Batata frita</option>
+                <option value="cachorro">Cachorro-quente</option>
+                <option value="lasanha">Lasanha</option>
+            </select>
+
+            <label for="bebida">Bebida:</label>
+            <select id="bebida">
+                <option value="">Selecione</option>
+                <option value="refrigerante">Refrigerante</option>
+                <option value="suco">Suco</option>
+                <option value="agua">Água</option>
+                <option value="cha">Chá gelado</option>
+                <option value="cafe">Café</option>
+            </select>
+
+            <button>Fazer pedido</button>
+        </form>
+
+        <div class="resultado"></div>
+
+        <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
