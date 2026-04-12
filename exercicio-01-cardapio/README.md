@@ -64,7 +64,6 @@ Abra o arquivo `index.html`
 * [Explicação da solução](./docs/SOLUCAO.md)
 * [Dúvidas comuns](./docs/DUVIDAS.md)
 * [Erros comuns](./docs/ERROS_COMUNS.md)
-* [Desafios](./docs/DESAFIOS.md)
 
 ---
 
