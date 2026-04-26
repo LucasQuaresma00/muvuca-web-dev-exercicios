@@ -1,0 +1,50 @@
+.main-bg {
+  /* Define uma imagem como fundo da seção */
+  background-image: url('../img/main-bg.svg');
+
+  /* Faz a imagem cobrir toda a área disponível */
+  background-size: cover;
+
+  /* Centraliza a imagem tanto horizontal quanto verticalmente */
+  background-position: center center;
+
+  /* Define a cor do texto usando variável CSS */
+  color: var(--white-color);
+}
+
+.white-bg {
+  /* Fundo branco padrão */
+  background: var(--white-color);
+
+  /* Cor principal para o texto */
+  color: var(--primary-color);
+}
+
+.main-content {
+  /* Define largura máxima para evitar conteúdo muito esticado */
+  max-width: 120rem;
+
+  /* Centraliza horizontalmente */
+  margin: 0 auto;
+
+  /* Espaçamento interno (topo/baixo e laterais com variável) */
+  padding: 10rem var(--gap);
+}
+
+.section {
+  /* Garante que cada seção ocupe no mínimo toda a altura da tela */
+  min-height: 100vh;
+}
+
+.menu-spacing {
+  /* Espaço fixo para compensar menu (ex: menu fixo no topo) */
+  height: 65px;
+}
+
+body .full-width {
+  /* Faz o elemento ocupar 100% da largura */
+  width: 100%;
+
+  /* Configuração de flex: cresce, encolhe e ocupa 100% */
+  flex: 1 1 100%;
+}

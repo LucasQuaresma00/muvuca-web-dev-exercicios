@@ -1,0 +1,107 @@
+/* Container principal do menu */
+.menu {
+  /* Fixa o menu no topo da tela */
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  /* Garante largura total */
+  width: 100%;
+
+  /* Controla a sobreposição (fica acima de outros elementos) */
+  z-index: 1;
+
+  /* Linha inferior sutil para separação visual */
+  border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
+/* Conteúdo interno do menu */
+.menu-content {
+  /* Layout flexível para alinhar itens horizontalmente */
+  display: flex;
+
+  /* Espaça logo e navegação nas extremidades */
+  justify-content: space-between;
+
+  /* Alinha verticalmente ao centro */
+  align-items: center;
+
+  /* Remove padding vertical padrão (se houver herança) */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Título/logo do menu */
+.menu h1 {
+  font-size: 2.3rem;
+
+  /* Usa cor principal do tema */
+  color: var(--primary-color);
+}
+
+/* Link dentro do título herda a cor do h1 */
+.menu h1 a {
+  color: inherit;
+}
+
+/* Lista de navegação */
+.menu ul {
+  /* Remove marcadores padrão */
+  list-style: none;
+
+  /* Coloca itens lado a lado */
+  display: flex;
+}
+
+/* Links do menu */
+.menu ul li a {
+  /* Permite controlar padding como bloco */
+  display: block;
+
+  /* Área clicável maior */
+  padding: 2rem;
+
+  font-size: 1.8rem;
+  color: var(--primary-color);
+
+  /* Necessário para posicionar o ::after relativo ao link */
+  position: relative;
+}
+
+/* Linha animada (efeito hover) */
+.menu ul li a::after {
+  content: '';
+
+  /* Posicionamento absoluto em relação ao link */
+  position: absolute;
+
+  /* Fica próximo da base do link */
+  bottom: 1rem;
+
+  /* Começa centralizado */
+  left: 50%;
+
+  /* Inicialmente invisível (largura 0) */
+  width: 0;
+
+  /* Altura da linha */
+  height: 0.2rem;
+
+  /* Cor de destaque */
+  background: var(--secondary-color); 
+
+  /* Animação suave */
+  transition: all 300ms ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.menu ul li a:hover::after {
+  /* Expande a linha */
+  width: 50%;
+
+  /* Reposiciona para manter centralizado */
+  left: 25%;
+}
+

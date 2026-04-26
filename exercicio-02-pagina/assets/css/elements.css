@@ -1,0 +1,136 @@
+/* Reset básico para remover espaçamentos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+
+  /* Faz com que padding e border não aumentem o tamanho total do elemento */
+  box-sizing: border-box;
+}
+
+html {
+  /* Define base de 10px (62.5% de 16px) para facilitar uso de rem */
+  font-size: 62.5%;
+
+  /* Ativa rolagem suave ao navegar por âncoras */
+  scroll-behavior: smooth;
+}
+
+body {
+  /* Fonte principal do site */
+  font-family: 'Open Sans', sans-serif;
+
+  /* Tamanho base do texto (equivale a ~20px) */
+  font-size: 2rem;
+
+  /* Cor principal do texto */
+  color: var(--primary-color);
+
+  /* Espaçamento entre linhas para melhor leitura */
+  line-height: 1.5;
+}
+
+/* Define fonte padrão para todos os títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  /* Título principal com destaque */
+  font-size: 6rem;
+
+  /* Texto em maiúsculo */
+  text-transform: uppercase;
+}
+
+h2 {
+  /* Subtítulo principal */
+  font-size: 6rem;
+
+  /* Espaçamento inferior */
+  margin-bottom: 5rem;
+
+  /* Padroniza em maiúsculo */
+  text-transform: uppercase;
+
+  /* Altura de linha mais compacta para títulos */
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 4rem;
+}
+
+h6 {
+  font-size: 3.5rem;
+}
+
+a {
+  /* Remove sublinhado padrão dos links */
+  text-decoration: none;
+}
+
+p {
+  /* Espaçamento entre parágrafos */
+  margin-bottom: 3rem;
+}
+
+/* Container para tabelas responsivas */
+.responsive-table {
+  overflow: hidden;
+
+  /* Permite scroll horizontal em telas pequenas */
+  overflow-x: auto;
+}
+
+table {
+  /* Evita que a tabela fique pequena demais */
+  min-width: 360px;
+
+  /* Ocupa toda a largura disponível */
+  width: 100%;
+
+  /* Remove espaços entre bordas das células */
+  border-collapse: collapse;
+}
+
+table caption {
+  /* Estilo do título da tabela */
+  font-style: italic;
+  font-size: 1.6rem;
+
+  /* Alinhamento à esquerda */
+  text-align: left;
+
+  margin-bottom: 1rem;
+}
+
+table td, table th {
+  /* Evita quebra de linha dentro das células */
+  white-space: nowrap;
+
+  /* Espaçamento interno */
+  padding: 1rem;
+
+  /* Alinhamento do conteúdo */
+  text-align: left;
+
+  /* Borda leve usando variável */
+  border: 0.1rem solid var(--light-gray-color);
+}
+
+tfoot td, table th {
+  /* Destaque visual para rodapé e cabeçalho */
+  background: var(--light-gray-color);
+}
+
+tfoot td {
+  background: var(--light-gray-color);
+}
